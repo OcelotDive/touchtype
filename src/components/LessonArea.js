@@ -24,7 +24,7 @@ class LessonArea extends Component {
 		
 		return (
 	
-		<section className={lessonAreaClass} ref="lessonMain">
+		<section className={lessonAreaClass} id="lessonPanel" ref="lessonMain">
 			
 			<div id="lessonSetOne">
 			

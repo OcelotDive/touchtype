@@ -6,9 +6,8 @@
 	left: 5%;
 	top: 28%;
 	z-index: 9998;
-	border-radius: 1%;
 	overflow-y: scroll;
-
+	
 
 }
 
@@ -16,14 +15,22 @@
 
 /*or lessonset 1 etc */
 .lessonArea div {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items:flex-start;
-	justify-content: center;
+	-webkit-box-align:start;
+	-ms-flex-align:start;
+	 align-items:flex-start;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	 justify-content: center;
 	font-weight: bold;
 	font-family:  'Exo 2', sans-serif;
 	width: 100%;
 	height: 100vh;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	 flex-wrap: wrap;
+
 }
 
 .lessonArea div:nth-child(1) {
@@ -31,25 +38,31 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
+	-moz-background-attachment: fixed;
 	background-attachment: fixed;
 	overflow: hidden;
+	
 }
 .lessonArea div:nth-child(2) {
 	background-image: url(../images/rgb2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	-moz-background-attachment: fixed;
 	background-attachment: fixed;
 }
 .lessonArea div:nth-child(3) {
 	background-image: url(../images/0-1.jpg);
 	background-size: cover;
+	-moz-background-attachment: fixed;
 	background-attachment: fixed;
 }
 
 .lessonArea div:nth-child(4) {
 	background: aquamarine;
-	background-image: url(../images/keyboard4.jpg);
+	background-image: url(../images/rgb.jpg);
 	background-size: cover;
+	-moz-background-attachment: fixed;
+	background-attachment: fixed;
 }
 
 
@@ -78,10 +91,9 @@ h4 {
 	font-weight: bold;
 	white-space: pre;
 	flex: 1 0 25%;
-	background-image: url('../images/blue.png');
-	
-	
-	
+	background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 1%, rgba(0,212,255,0.2805497198879552) 11%, rgba(244,238,238,1) 29%);
+		
 }
 
 
