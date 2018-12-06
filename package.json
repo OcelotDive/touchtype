@@ -2,7 +2,7 @@
   "name": "touchtype",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://OcelotDive.github.io/touchtype",
+  "homepage": "https://ocelotdive.github.io/touchtype",
   "dependencies": {
     "create-react-native-app": "^2.0.2",
     "gh-pages": "^2.0.1",
