@@ -62,3 +62,10 @@
 .col > div:nth-child(n + 6) {
 	background: yellow;
 }
+
+
+/*media*/
+
+@media screen and (max-width: 770px) { 
+    .instructionArea { display: none; }
+}

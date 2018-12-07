@@ -56,3 +56,8 @@ label {
 label {
 	font-size: 30px;
 }
+
+
+@media screen and (max-width: 770px)  { 
+    .timerContainer { display: none; }
+}

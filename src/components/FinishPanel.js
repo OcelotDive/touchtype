@@ -8,13 +8,12 @@ class FinishPanel extends Component {
 
 	
 	render() {
-		let onScreen = ['bounceInLeft','bounceInRight','lightSpeedIn'];
-		let offScreen = ['bounceOutLeft','bounceOutRight',,'lightSpeedOut'];
-		 let random1 = Math.floor((Math.random() * 3) + 1);
-		let random2 = Math.floor((Math.random() * 3) + 1);
+		let onScreen = ['lightSpeedIn'];
+		let offScreen = ['lightSpeedOut'];
 		
 		
-	let	finishClass = this.props.finishShow ? 'finishPanel animated ' + onScreen[random1] : 'finishPanel animated ' + offScreen[random2];
+		
+	let	finishClass = this.props.finishShow ? 'finishPanel animated ' + onScreen[0] : 'finishPanel animated ' + offScreen[0];
 		
 		return (
 		this.props.finishShow ?
