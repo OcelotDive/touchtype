@@ -35,7 +35,7 @@ const rootReducer = (state = initState, action) => {
 			state.timeOn = true;
 			
 		
-			
+		
 			
 				//return className to default after any key press (coloured keys)
 				state.lessonKeys.map((_,i,a)=> {
@@ -58,6 +58,7 @@ const rootReducer = (state = initState, action) => {
 					letterCorrect: state.letterCorrect,
 					usedString: state.usedString,
 					activeLesson: state.activeLesson,
+					displayLessonsMenu: state.displayLessonsMenu,
 					lessonKeys: state.lessonKeys,
 					timeOn: state.timeOn,
 					intervalId: state.intervalId,
@@ -139,6 +140,7 @@ const rootReducer = (state = initState, action) => {
 				letterCorrect: state.letterCorrect,
 				usedString: state.usedString,
 				activeLesson: state.activeLesson,
+				displayLessonsMenu: state.displayLessonsMenu,
 				lessonKeys: state.lessonKeys,
 				timeOn: state.timeOn,
 				intervalId: state.intervalId,
@@ -179,6 +181,7 @@ const rootReducer = (state = initState, action) => {
 					stringLength: state.stringLength,
 					fetchText: state.fetchText,
 					letterCorrect: state.letterCorrect,
+					displayLessonsMenu: state.displayLessonsMenu,
 					usedString: state.usedString,
 					activeLesson: state.activeLesson,
 					lessonKeys: state.lessonKeys,
@@ -244,6 +247,7 @@ const rootReducer = (state = initState, action) => {
 				letterCorrect: state.letterCorrect,
 				usedString: state.usedString,
 				activeLesson: state.activeLesson,
+				displayLessonsMenu: state.displayLessonsMenu,
 				lessonKeys: state.lessonKeys,
 				timeOn: state.timeOn,
 				intervalId: state.intervalId,
@@ -352,7 +356,10 @@ const rootReducer = (state = initState, action) => {
 				
 				x.className = x.className + ' animated pulse infinite green';
 				}
-				
+				else if(_ === 'Space') {
+					let x = document.getElementById(_);
+					x.className = x.className;
+				}
 				else {
 				let x = document.getElementById(_);
 				

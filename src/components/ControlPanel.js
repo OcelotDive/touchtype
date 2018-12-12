@@ -6,6 +6,7 @@ class ControlPanel extends Component {
 	
 	handleButtonClick = () => {
 			this.props.lessonsMenu();
+		
 		}
 	
 	
@@ -22,8 +23,8 @@ class ControlPanel extends Component {
 		
 		<div className="controlPanel">
 			
-		<button className="lessonButton" onClick={this.handleButtonClick}>Lessons</button>
-		<button className="lessonButton" onClick={this.handleButtonReset}>Restart</button>	
+		<button id="LessonButton" className="lessonButton" onMouseDown={this.handleButtonClick}>Lessons</button>
+		<button id="ResetButton" className="lessonButton" onMouseDown={this.handleButtonReset}>Restart</button>	
 			
 		</div>
 		
