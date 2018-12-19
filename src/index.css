@@ -441,6 +441,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', end
 	position: absolute;
 	border: inset 2px black;
 	box-shadow: 3px 3px;
+
 	background: -moz-linear-gradient(45deg, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%); /* ff3.6+ */
 background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #008080), color-stop(25%, #FFFFFF), color-stop(50%, #05C1FF), color-stop(75%, #FFFFFF), color-stop(100%, #005757)); /* safari4+,chrome */
 background: -webkit-linear-gradient(45deg, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%); /* safari5.1+,chrome10+ */
