@@ -112,7 +112,7 @@ class LessonArea extends Component {
 				
 			<div className="lessonContainer" id="lessonDiv">
 			<h5 className="lessonTitle" id="lesson19" data-keys="Backquote,IntlBackslash,Minus,Equal,Quote,Backslash,ShiftLeft,ShiftRight,Space" onClick={this.startLesson}>LESSON 19</h5>
-			<h4>Symbols {'ˋ ¬ _ - + = | @ ~ #'}</h4></div>
+			<h4>Symbols {'` ¬ _ - + = | @ ~ #'}</h4></div>
 				
 			<div className="lessonContainer" id="lessonDiv">
 			<h5 className="lessonTitle" id="lesson20" data-keys="Comma,Period,Slash,Semicolon,BracketLeft,BracketRight,Quote,ShiftLeft,ShiftRight,IntlBackslash,Digit1,Digit2,Digit3,Digit8,Digit6,Digit9,Digit0,Digit7,Digit4,Digit5,Backquote,IntlBackslash,Minus,Equal,Quote,Backslash,Space" onClick={this.startLesson}>LESSON 20</h5>
