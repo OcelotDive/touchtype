@@ -422,7 +422,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', end
 	margin-left: 5%;
 	height: 150px;
 	margin-bottom: 2%;
-	margin-top: 2%;
+	margin-top: 20px;
+	top: 40px;
+
 
 
 
@@ -432,7 +434,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', end
 	height: 80%;
 	width: 100%;
 	font-size: 4rem;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto Mono', monospace;
 	resize: none;
 	line-height: 80%;
 	background-color: aliceblue;
@@ -456,7 +458,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005757', end
     height: 60%;
 	width: 100%;
 	font-size: 4rem;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto Mono', monospace;
 	resize: none;
 	line-height: 80%;
 	color: #000;
@@ -487,7 +489,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005757', end
     height: 60%;
 	width: 100%;
 	font-size: 4rem;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Roboto Mono', monospace;
 	resize: none;
 	line-height: 80%;
 	color: lightgray;
