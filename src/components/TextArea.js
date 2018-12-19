@@ -31,7 +31,7 @@ class TextArea extends Component {
 		let lesson18 = ['!£', '"(^', '^%$', '%£)', '(*)"', '&$%"', ')!*%', '£$%^&', '&^£!', '(*&"^)'];
 		let lesson19 = ['ˋ|@', '~#', 'ˋ¬-=_', 'ˋ¬+ˋ@~', '#¬-=', '=|@#', '_-+=', '~¬@|+', '¬+=', '#+_', '#ˋ=~|'];
 		let lesson20 = ['ˋ*)', '@!#_', '+"$~', '¬($|)', '\'*ˋ', '_"+?', '&^¬|', ':(<ˋ\\', '>#¬+', '||>&', '@ˋ¬$%', '%^*', '=@!¬~'];
-		let lesson21 = ['!W,{', 'u*nO|', '*ine', '¬ieEI', 'P(0*', 'aNB-', 'QinV', 'ˋ~84neI', 'I8-0', '3.|*hj', '-+fJ', 'IN&)', 'Ti"]', 'YB}|', '\\jfgh', 'Hi*&', '~UQi', '+~ˋ|', '*a£R', ',{8}G;S', 'sdL^', 'ki(@', '32I}', 'sif', 'ie9', '9dj9', 'JIi0&', 'df90', '839YQ', '|,}[]', 'IAM', '),bHHI', '93h+=', 'YieE', '237&', '&1A', '~IUsd', 'kdK]', 'iD193', ':Ee', ':84TEr', "'iˋ73", "gh'8", "Tr:18", 'VbˋM{', '{WeQ', '¬Cx', 'Ziu9', 'XcQ8j', 'CpP', 'VCx', 'zPoE£', '$^ie%', '*821s', 'licz', 'hLiex', '12YWE', '<HYre', 'J>f', '4Fj/¬', '12Yw', '0Q)', '~)+0', 'Wdnu', 'skl', 'uwp', 'nvbu', 'Udm', 'PwO', 'WinC', 'Co9', 'Aai', '3plk', 'SFcz', "\{Pjv2", 'Q!3^', 'BvZ6', '#09&', 'ReWPol', 'VmCb', '%/', 'Hg9@'];
+		let lesson21 = ['!W,{', 'u*nO|', '*ine', '¬ieEI', 'P(0*', 'aNB-', 'QinV', 'ˋ~84neI', 'I8-0', '3.|*hj', '-+fJ', 'IN&)', 'Ti"]', 'YB}|', '\\jfgh', 'Hi*&', '~UQi', '+~ˋ|', '*a£R', ',{8}G;S', 'sdL^', 'ki(@', '32I}', 'sif', 'ie9', '9dj9', 'JIi0&', 'df90', '839YQ', '|,}[]', 'IAM', '),bHHI', '93h+=', 'YieE', '237&', '&1A', '~IUsd', 'kdK]', 'iD193', ':Ee', ':84TEr', "'iˋ73", "gh'8", "Tr:18", 'VbˋM{', '{WeQ', '¬Cx', 'Ziu9', 'XcQ8j', 'CpP', 'VCx', 'zPoE£', '$^ie%', '*821s','licz', 'hLiex', '12YWE', '<HYre', 'J>f', '4Fj/¬', '12Yw', '~)+0', 'Wdnu', 'skl', 'uwp', 'nvbu', 'Udm', 'Qzc', 'PwO', 'WinC', 'Co9', 'Aai', '3plk', 'SFcz', "\{Pjv2", 'Q!3^', 'BvZ6', '#09&', 'ReWPol', 'VmCb', '%/', 'Hg9@', 'ooPHG', 'ReI./','[[74', 'Iilg', '1`:T','bB\|'];
 		
 		let textString;
 		let currentLesson = words;
@@ -41,95 +41,95 @@ class TextArea extends Component {
 		switch(this.props.activeLesson) {
 				case 'lesson1': 
 					currentLesson = lesson1;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			case 'lesson2':
 					currentLesson = lesson2;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			case 'lesson3':
 					currentLesson = lesson3;
-					seed = Math.floor(Math.random() * 10)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			case 'lesson4':
 					currentLesson = lesson4;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 				
 			case 'lesson5':
 					currentLesson = lesson5;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			case 'lesson6':
 					currentLesson = lesson6;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;	
 			case 'lesson7':
 					currentLesson = lesson7;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			case 'lesson8':
 					currentLesson = lesson8;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			case 'lesson9':
 					currentLesson = lesson9;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			case 'lesson10':
 					currentLesson = lesson10;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			case 'lesson11':
 					currentLesson = lesson11;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 8) + 1)
 					break;
 			case 'lesson12':
 					currentLesson = lesson12;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			case 'lesson13':
 					currentLesson = lesson13;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			case 'lesson14':
 					currentLesson = lesson14;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			
 			case 'lesson15':
 					currentLesson = lesson15;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 				
 			case 'lesson16':
 					currentLesson = lesson16;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 				
 			case 'lesson17':
 					currentLesson = lesson17;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 				
 			case 'lesson18':
 					currentLesson = lesson18;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			
 			case 'lesson19':
 					currentLesson = lesson19;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 				
 			case 'lesson20':
 					currentLesson = lesson20;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;	
 			
 			case 'lesson21':
 					currentLesson = lesson21;
-					seed = Math.floor(Math.random() * 20)
+					seed = Math.floor((Math.random() * 20) + 1)
 					break;
 			default:
 				break;
@@ -201,7 +201,7 @@ class TextArea extends Component {
 			</div>
 			
 			</form>
-			<Lorem id="textGenerator" ref="text_content"  sentenceUpperBound="8" count="1" words={currentLesson} seed={seed}/>
+			<Lorem id="textGenerator" ref="text_content"  sentenceUpperBound="9" count="1" words={currentLesson} seed={seed}/>
 			
 			</div>
 			
