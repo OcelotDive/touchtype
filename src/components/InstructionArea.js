@@ -27,7 +27,7 @@ class InstructionArea extends Component {
 	
 	render() {
 		
-	let basics = "When beginning to type, your fingers should always rest on the third row of keys or the 'Home Row'. With the index fingers find the small raised bumps on the F and J keys. From here spread each finger of both hands outwards so the fingers are lightly resting on the Row 3 three keys as in the following chart. The left and right Thumbs are used to control the space bar. The most important rule is DON'T LOOK AT your KEYBOARD. If you must look try to use the on screen keyboard to check which key is being struck. To start choose a lesson."
+	let basics = "When beginning to type, your fingers should always rest on the third row of keys or the 'Home Row'. With the index fingers find the small raised bumps on the F and J keys. From here spread each finger of both hands outwards so the fingers are lightly resting on the Row 3 three keys as in the following chart. The left and right Thumbs are used to control the space bar. The most important rule is DON'T LOOK AT YOUR KEYBOARD. If you must look try to use the on screen keyboard to check which key is being struck. To start choose a lesson."
 	
 	
 	
