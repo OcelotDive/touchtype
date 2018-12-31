@@ -9,7 +9,7 @@ class Lesson3Instructions extends Component {
 	render() {
 		
 	
-	let lesson3 = "Start with your fingers on the Home Row just like the last lesson. Here you will use all the letters on Row 3 except for the symbols which will be covered later."
+	let lesson3 = "Start with your fingers on the Home Row just like the last lesson. Here you will use all the letters on Row 3 except for the symbols which we will look at a little later."
 
 	
 
@@ -37,16 +37,16 @@ class Lesson3Instructions extends Component {
 			</div>
 			<div className="col">
 		
-			<div style={{backgroundColor: "green"}}>L5</div>
-			<div style={{backgroundColor: "green"}}>L4</div>
-			<div style={{backgroundColor: "green"}}>L3</div>
-			<div style={{backgroundColor: "green"}}>L2</div>
-			<div style={{backgroundColor: "green"}}>L2</div>
-			<div style={{backgroundColor: "yellow"}}>R2</div>
-			<div style={{backgroundColor: "yellow"}}>R2</div>
-			<div style={{backgroundColor: "yellow"}}>R3</div>
-			<div style={{backgroundColor: "yellow"}}>R4</div>
-			<div style={{backgroundColor: "yellow"}}>R5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L4</div>
+			<div style={{backgroundColor: "aliceblue"}}>L3</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 		
 			</div>
 			</div>

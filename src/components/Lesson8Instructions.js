@@ -9,7 +9,7 @@ class Lesson8Instructions extends Component {
 	render() {
 		
 	
-	let lesson8 = 'We will begin learning Row 4. This Row includes the first symbols you have encountered so far. The Comma and the Period are on this row and obviously are important due to their frequent use. Here use  your Left index finger for the V & B keys and Right index finger for the N & M keys';
+	let lesson8 = 'We will begin learning Row 4. This Row includes the first symbols you have encountered so far. The Comma and the Period are on this row and obviously are important due to their frequent use. Here use  your left index finger for the V & B keys and right index finger for the N & M keys.';
 
 	
 
@@ -40,10 +40,10 @@ class Lesson8Instructions extends Component {
 			<div style={{backgroundColor: "grey"}}>L5</div>
 			<div style={{backgroundColor: "grey"}}>L4</div>
 			<div style={{backgroundColor: "grey"}}>L3</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
 			<div style={{backgroundColor: "grey"}}>R3</div>
 			<div style={{backgroundColor: "grey"}}>R4</div>
 			<div style={{backgroundColor: "grey"}}>R5</div>

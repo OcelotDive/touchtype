@@ -9,7 +9,7 @@ class Lesson5Instructions extends Component {
 	render() {
 		
 	
-	let lesson5 = 'As always start with your fingers on the Home Row (Row 3) with your index fingers over F & J. Continuing with the rest of Row 2 on the keyboard you will again have to reach up to type the characters, but this time using the outer fingers L5 (pinky), L4 (ring), L3 (middle), R4 (ring), R5 (pinky). Familiarise yourself with the keys and their finger positions before starting to type.';
+	let lesson5 = 'As always start with your fingers on the Home Row (Row 3) with your index fingers over F & J. Continuing with the rest of Row 2 on the keyboard but this time using the outer fingers L5 (pinky), L4 (ring), L3 (middle), R4 (ring), R5 (pinky).';
 
 	
 
@@ -37,16 +37,16 @@ class Lesson5Instructions extends Component {
 			</div>
 			<div className="col">
 		
-			<div style={{backgroundColor: "green"}}>L5</div>
-			<div style={{backgroundColor: "green"}}>L4</div>
-			<div style={{backgroundColor: "green"}}>L3</div>
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L4</div>
+			<div style={{backgroundColor: "aliceblue"}}>L3</div>
 			<div style={{backgroundColor: "grey"}}>L2</div>
 			<div style={{backgroundColor: "grey"}}>L2</div>
 			<div style={{backgroundColor: "grey"}}>R2</div>
 			<div style={{backgroundColor: "grey"}}>R2</div>
 			<div style={{backgroundColor: "grey"}}>R3</div>
-			<div style={{backgroundColor: "yellow"}}>R4</div>
-			<div style={{backgroundColor: "yellow"}}>R5</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 		
 			</div>
 			</div>

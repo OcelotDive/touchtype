@@ -9,7 +9,7 @@ class Lesson2Instructions extends Component {
 	render() {
 		
 	
-	let lesson2 = 'Start with your fingers on the Home Row, with the index finger of your left hand on F and the index finger of your right hand on J, the middle fingers on D & k, the ring fingers on S & L and pinky fingers on A & ;. Sometimes it can be more difficult to type individual letters rather than proper words, so for now just concentrate on accuracy. You can move on when you feel you have reached a level of consistancy.'
+	let lesson2 = 'Start with your fingers on the Home Row, with the index finger of your left hand on F and the index finger of your right hand on J, the middle fingers on D & K, the ring fingers on S & L and pinky fingers on A & semi colon (;). Sometimes it can be more difficult to type individual letters rather than proper words, so for now just concentrate on accuracy. You can move on when you feel you have reached a level of consistency.'
 
 	
 
@@ -37,16 +37,16 @@ class Lesson2Instructions extends Component {
 			</div>
 			<div className="col">
 		
-			<div style={{backgroundColor: "grey"}}>L5</div>
-			<div style={{backgroundColor: "grey"}}>L4</div>
-			<div style={{backgroundColor: "grey"}}>L3</div>
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L4</div>
+			<div style={{backgroundColor: "aliceblue"}}>L3</div>
 			<div style={{backgroundColor: "grey"}}>L2</div>
 			<div style={{backgroundColor: "grey"}}>L2</div>
 			<div style={{backgroundColor: "grey"}}>R2</div>
 			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R3</div>
-			<div style={{backgroundColor: "grey"}}>R4</div>
-			<div style={{backgroundColor: "grey"}}>R5</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 		
 			</div>
 			</div>

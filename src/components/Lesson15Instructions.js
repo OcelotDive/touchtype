@@ -33,9 +33,9 @@ class Lesson15Instructions extends Component {
 			<div className="col">
 		
 			
-			<div style={{backgroundColor: "grey"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
 		
-			<div style={{backgroundColor: "grey"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 		
 			</div>
 			</div>

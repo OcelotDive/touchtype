@@ -9,7 +9,7 @@ class Lesson10Instructions extends Component {
 	render() {
 		
 	
-	let lesson10 = 'Now practice the whole of Row 4 apart from back slash this will be introduced later.';
+	let lesson10 = 'Now practice the whole of Row 4. If using a UK layout style of keyboard Backslash will be introduced later.';
 
 	
 
@@ -37,16 +37,16 @@ class Lesson10Instructions extends Component {
 			</div>
 			<div className="col">
 		
-			<div style={{backgroundColor: "grey"}}>L5</div>
-			<div style={{backgroundColor: "grey"}}>L4</div>
-			<div style={{backgroundColor: "grey"}}>L3</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R3</div>
-			<div style={{backgroundColor: "grey"}}>R4</div>
-			<div style={{backgroundColor: "grey"}}>R5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L4</div>
+			<div style={{backgroundColor: "aliceblue"}}>L3</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 		
 			</div>
 			

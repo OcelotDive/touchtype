@@ -40,11 +40,11 @@ class Lesson13Instructions extends Component {
 			<div style={{backgroundColor: "grey"}}>L5</div>
 			<div style={{backgroundColor: "grey"}}>L4</div>
 			<div style={{backgroundColor: "grey"}}>L3</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
 			<div style={{backgroundColor: "grey"}}>R4</div>
 			<div style={{backgroundColor: "grey"}}>R5</div>
 		

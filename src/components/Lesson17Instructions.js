@@ -10,12 +10,12 @@ class Lesson17Instructions extends Component {
 		
 	
 	
-	let lesson17 = 'The following lessons on symbols are a guide only as keyboard layouts can vary country to country, However these lessons are based on the standard Uk layout. The following symbols are all keyed with the right hand. As always start with both hands on the home row with index fingers over the f and j keys.'
+	let lesson17 = 'Symbols can vary from keyboard to keyboard, so this lesson will vary depending on which layout you are using. As always start with both hands on the home row with index fingers over the F and J keys. Remember to operate left Shift and right Shift with the respective Pinky fingers.'
 	
 
 	
 		return (
-		
+			this.props.flagSelect1 === 'usLayout flagHighlighted' ?
 			
 			<div className="instructionArea">
 			<h6>LESSON 17</h6>
@@ -27,15 +27,41 @@ class Lesson17Instructions extends Component {
 			
 			<div style={{backgroundColor: "yellow"}}>{"<"}</div>
 			<div style={{backgroundColor: "yellow"}}>{">"}</div>
-			<div style={{backgroundColor: "yellow"}}>{"[ ] { } ' : ?"}</div>
+			<div style={{backgroundColor: "yellow"}}>{"[ ] { } ' : ? \\"}</div>
 			
 			
 			</div>
 			
 			<div className="col">
-			<div style={{backgroundColor: "grey"}}>R3</div>
-			<div style={{backgroundColor: "grey"}}>R4</div>
-			<div style={{backgroundColor: "grey"}}>R5</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
+			</div>
+			</div>
+			</div>
+			
+			:
+			
+			<div className="instructionArea">
+			<h6>LESSON 17</h6>
+			<article>
+			{lesson17}
+			</article>
+			<div className="chart">
+			<div className="col">
+			<div style={{backgroundColor: "green"}}>{"\\"}</div>
+			<div style={{backgroundColor: "yellow"}}>{"<"}</div>
+			<div style={{backgroundColor: "yellow"}}>{">"}</div>
+			<div style={{backgroundColor: "yellow"}}>{"[ ] { } ' : ? \\"}</div>
+			
+			
+			</div>
+			
+			<div className="col">
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 			</div>
 			</div>
 			</div>
@@ -46,8 +72,9 @@ class Lesson17Instructions extends Component {
 const mapStateToProps = (state) => {
 	return {
 		activeLesson: state.activeLesson,
-		lessonKeys: state.lessonKeys
-		
+		lessonKeys: state.lessonKeys,
+		flagSelect1: state.flagSelect1,
+		flagSelect2: state.flagSelect2
 	
 		
 	}

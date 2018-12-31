@@ -37,16 +37,16 @@ class Lesson14Instructions extends Component {
 			</div>
 			<div className="col">
 		
-			<div style={{backgroundColor: "grey"}}>L5</div>
-			<div style={{backgroundColor: "grey"}}>L4</div>
-			<div style={{backgroundColor: "grey"}}>L3</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R3</div>
-			<div style={{backgroundColor: "grey"}}>R4</div>
-			<div style={{backgroundColor: "grey"}}>R5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L4</div>
+			<div style={{backgroundColor: "aliceblue"}}>L3</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 		
 			</div>
 			
@@ -66,16 +66,16 @@ class Lesson14Instructions extends Component {
 			</div>
 			<div className="col">
 		
-			<div style={{backgroundColor: "grey"}}>L5</div>
-			<div style={{backgroundColor: "grey"}}>L4</div>
-			<div style={{backgroundColor: "grey"}}>L3</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R3</div>
-			<div style={{backgroundColor: "grey"}}>R4</div>
-			<div style={{backgroundColor: "grey"}}>R5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L4</div>
+			<div style={{backgroundColor: "aliceblue"}}>L3</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 		
 			</div>
 			
@@ -92,16 +92,16 @@ class Lesson14Instructions extends Component {
 			<div style={{backgroundColor: "yellow"}}>;</div>
 			</div>
 			<div className="col">
-			<div style={{backgroundColor: "grey"}}>L5</div>
-			<div style={{backgroundColor: "grey"}}>L4</div>
-			<div style={{backgroundColor: "grey"}}>L3</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R3</div>
-			<div style={{backgroundColor: "grey"}}>R4</div>
-			<div style={{backgroundColor: "grey"}}>R5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L4</div>
+			<div style={{backgroundColor: "aliceblue"}}>L3</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 			</div>
 			
 			<div className="col">
@@ -117,16 +117,16 @@ class Lesson14Instructions extends Component {
 			<div style={{backgroundColor: "yellow"}}>/</div>
 			</div>
 			<div className="col">
-			<div style={{backgroundColor: "grey"}}>L5</div>
-			<div style={{backgroundColor: "grey"}}>L4</div>
-			<div style={{backgroundColor: "grey"}}>L3</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>L2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R2</div>
-			<div style={{backgroundColor: "grey"}}>R3</div>
-			<div style={{backgroundColor: "grey"}}>R4</div>
-			<div style={{backgroundColor: "grey"}}>R5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L4</div>
+			<div style={{backgroundColor: "aliceblue"}}>L3</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 			</div>
 			
 			

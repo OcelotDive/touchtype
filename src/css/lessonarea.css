@@ -34,7 +34,7 @@
 }
 
 .lessonArea div:nth-child(1) {
-	background-image: url(../images/touch-typing.jpg);
+	background-image: url(../images/hands.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
@@ -44,14 +44,14 @@
 	
 }
 .lessonArea div:nth-child(2) {
-	background-image: url(../images/rgb2.jpg);
+	background-image: url(../images/keys.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	-moz-background-attachment: fixed;
 	background-attachment: fixed;
 }
 .lessonArea div:nth-child(3) {
-	background-image: url(../images/0-1.jpg);
+	background-image: url(../images/laptop.jpg);
 	background-size: cover;
 	-moz-background-attachment: fixed;
 	background-attachment: fixed;
@@ -59,7 +59,7 @@
 
 .lessonArea div:nth-child(4) {
 	background: aquamarine;
-	background-image: url(../images/rgb.jpg);
+	background-image: url(../images/typingFast.jpg);
 	background-size: cover;
 	-moz-background-attachment: fixed;
 	background-attachment: fixed;
@@ -96,4 +96,8 @@ h4 {
 		
 }
 
-
+/* media queries */
+@media screen and (max-width: 510px) { 
+    
+    .lessonArea { visibility: hidden; z-index: -9999;}
+}

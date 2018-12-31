@@ -14,11 +14,11 @@ class TextArea extends Component {
 		let lesson4 = shuffle(['ry', 'iiuurtiy', 'uiuirtrt', 'ittriuuty', 'ytytriiu', 'rutyirriyt', 'uyi', 'tryui', 'ytriiuy', 'iuy', 'ttry', 'truy', 'yyrrtiu']);
 		let lesson5 = shuffle(['woopwq', 'oopqqw', 'ppoopow', 'qwqwop', 'popqw', 'woqp', 'opwooqqp', 'wop', 'pow', 'qwop', 'owow', 'owpowqow', 'qwppqqoow', 'op', 'qw', 'owpq']);
 		let lesson6 = shuffle(['qpiou', 'toop', 'prot', 'iopert', 'iwpqiru', 'poor', 'rotter', 'iutwpo', 'tere', 'pouy', 'qytio', 'eerie', 'tyr', 'trtry', 'uot', 'trew', 'pwipe', 'ooree', 'qwerty', 'pyytrre']);
-		let lesson7 = shuffle(['qled', ';ilhde', 'ghieos', 'ppqlshg', 'jfiedo', 'yqpe', 'yi;s;;eid', 'poiedgg', 'gheidkow', 'qllhiel', 'ikpkqlqleiy', 'idreekjg', 'jfpofjeit', 'idttqphg', 's;id', 'ied', 'iss;ytqaap', 'idkels', 'poddl;;slke']);
+		let lesson7 = shuffle(['qled', ';ilhde', 'ghieos', 'ppqlshg', 'jfiedo', 'yqpe', 'yi;s;eid', 'poiedgg', 'gheikow', 'qllhiel', 'ikpkqlly', 'idreekjg', 'jfpofjeit', 'idttqphg', 's;id', 'ied', 'is;ytqap', 'idkels', 'podl;slke']);
 		
 		
 		let lesson8 = shuffle(['vvbbnnmm', 'vb', 'nm', 'mvbn', 'vbnm', 'nvbm', 'vvbbnnmm',  'nmvn', 'bbmmnvb', 'mvmbmmnm', 'vbvbmnnmv', 'vbbnnbmv', 'nbmv']);
-		let lesson9 = shuffle(['zxc', ',./', '//zx', 'cc./', ',.ccx/', 'zzxx..//cc', 'c.z.,c', 'c/.xz', '//,,cxz', 'z.cv', ',,cxz', 'z.xc,...x', 'xc,.///zzcx', '.x,,//zzc']);
+		let lesson9 = shuffle(['zxc', ',./', '//zx', 'cc./', ',.ccx/', 'zzxx..//cc', 'c.z.,c', 'c/.xz', '//,,cxz', 'z.c', ',,cxz', 'z.xc,...x', 'xc,.///zzcx', '.x,,//zzc']);
 		let lesson10 = shuffle([',xc', 'x,mnvb', 'm,xmn/', 'bv,x/', 'nbmv/', ',,cnzb', 'x,mnvb', '/bnzc', 'xm,/vz', 'nvmz', 'b/x,z', 'bmz/,', '/bz,cx', 'm/z,vx']);
 		let lesson11 = shuffle(['qni', ';tybv', ',vupoc', 'hct', '/biq', ',p;qw', 'czyop', 'wbv', 'p,gse', 'synb', 'pkl', 'nigh', 'engz', 'ug,z', 'heq/i', 'bzxyti', 'iqwsl']);
 		let lesson12 = shuffle(['123', '90', '391', '2293', '031', '99002', '19203', '0912', '332900', '1139', '9012', '2013']);
@@ -28,10 +28,39 @@ class TextArea extends Component {
 		let lesson15 = shuffle(['uxW', 'P/,We', 'Gh/jf', 'ETvIO/', 'UiReQ', 'Thi,/F', 'AeiOU', '4rH8', '1IP4vn', 'Yo40', 'Qui7R', 'DaV3', '0cE', 'lOT10', 'V;/34', 'hGIPw83' ]);
 		let lesson16 = shuffle(["the","of","and","a","to","in","is","you","that","it","he","was","for","on","are","as","with","his","they","I","at","be","this","have","from","or","one","had","by","word","but","not","what","all","were","we","when","your","can","said","there","use","an","each","which","she","do","how","their","if","will","up","other","about","out","many","then","them","these","so","some","her","would","make","like","him","into","time","has","look","two","more","write","go","see","number","no","way","could","people","my","than","first","water","been","call","who","oil","its","now","find","long","down","day","did","get","come","made","may","part","Because","should", "Could", 'Type', 'Game', 'Tree', 'Fallen', 'Gusty', 'Place', 'Quiet', 'Reading', 'Place', 'Manage', 'Team', 'Picture', 'Ritzy', 'Posh', 'Between', 'Against', 'Screen', 'Castle', 'Team', 'Sense', 'Thought', 'Style', 'Program', 'Laugh', 'Fish', 'Holiday', 'Member', 'Dream', 'Direct', 'Force', 'Bring', 'Wine', 'Stagger', 'Oscar']);
 		let lesson17 = shuffle(["'?\\", ":[]", "<{:", ">?\\]", "'\\[?}", "?>", "'>?\\", "['}:", ">?[", "'}]"]);
-		let lesson18 = shuffle(['!£', '"(^', '^%$', '%£)', '(*)"', '&$%"', ')!*%', '£$%^&', '&^£!', '(*&"^)']);
-		let lesson19 = shuffle(['ˋ|@', '~#', 'ˋ¬-=_', 'ˋ¬+ˋ@~', '#¬-=', '=|@#', '_-+=', '~¬@|+', '¬+=', '#+_', '#ˋ=~|']);
-		let lesson20 = shuffle(['ˋ*)', '@!#_', '+"$~', '¬($|)', '\'*ˋ', '_"+?', '&^¬|', ':(<ˋ\\', '>#¬+', '||>&', '@ˋ¬$%', '%^*', '=@!¬~']);
-		let lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi', "<\\3/g", "Hh8/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#¬V", "0=kK;", "fS~|\|", 'P"h}n#', "gm*,R5$", 'weop%', "y@qGG¬", "hiri8", "epo,9£", "#:8d2", "Qwi1!2", "Z?82c", "/039G*", "H*(U)()", "bnj)&*", "@'kjkh7", "TK>/", ">£sw", ")&JG76", "mcnvb74", "dui_=645", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "¬j8ˋ", "90!hlrG", "JQWin", "^YT@gh", "Ii57Pu", "U(!wzc", "tTˋ9ˋnZ"]);
+		let lesson18;
+		
+		//lesson change for choice of keyboard
+		if(this.props.flagSelect1 === 'usLayout flagHighlighted') {
+		 lesson18 = shuffle(['!#', '@(^', '^%$', '%#)', '(*)@', '&$%@', ')!*%', '#$%^&', '&^#!', '(*&@^)']);
+		}
+		else {
+			 lesson18 = shuffle(['!£', '"(^', '^%$', '%£)', '(*)"', '&$%"', ')!*%', '£$%^&', '&^£!', '(*&"^)']);
+		}
+		
+		let lesson19;
+		if(this.props.flagSelect1 === 'usLayout flagHighlighted'){
+		 lesson19 = shuffle(['ˋ|"', '~"', 'ˋ-=_', 'ˋ+ˋ~', '"-=', '=|""', '_-+=', '~"|+', '"+=', '+_', '"ˋ=~|']);
+		}
+		else {
+		 lesson19 = shuffle(['ˋ|@', '~#', 'ˋ¬-=_', 'ˋ¬+ˋ@~', '#¬-=', '=|@#', '_-+=', '~¬@|+', '¬+=', '#+_', '#ˋ=~|']);
+		}
+		
+		let lesson20;
+		if(this.props.flagSelect1 === 'usLayout flagHighlighted'){
+		 lesson20 = shuffle(['ˋ*)', '@!#_', '+"$~', '~($|)', '\'*ˋ', '_"+?', '&^~|', ':(<ˋ\\', '>#+', '||>&', '@ˋ~$%', '%^*', '=@!~']);
+		}
+		else {
+		  lesson20 = shuffle(['ˋ*)', '@!#_', '+"$~', '¬($|)', '\'*ˋ', '_"+?', '&^¬|', ':(<ˋ\\', '>#¬+', '||>&', '@ˋ¬$%', '%^*', '=@!¬~']);	
+		}
+		
+		let lesson21;
+		if(this.props.flagSelect1 === 'usLayout flagHighlighted'){
+			lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi', "<\\3/g", "Hh8/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#V", "0=kK;", "fS~|\|", 'P"h}n#', "gm*,R5$", 'weop%', "y@qGG", "hiri8", "epo,9", "#:8d2", "Qwi1!2", "Z?82c", "/039G*", "H*(U)()", "bnj)&*", "@'kjkh7", "TK>/", ">sw", ")&JG76", "mcnvb74", "dui_=645", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "j8ˋ", "90!hlrG", "JQWin", "^YT@gh", "Ii57Pu", "U(!wzc", "tTˋ9ˋnZ"]);
+		}
+		else {
+			lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi', "<\\3/g", "Hh8/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#¬V", "0=kK;", "fS~|\|", 'P"h}n#', "gm*,R5$", 'weop%', "y@qGG¬", "hiri8", "epo,9£", "#:8d2", "Qwi1!2", "Z?82c", "/039G*", "H*(U)()", "bnj)&*", "@'kjkh7", "TK>/", ">£sw", ")&JG76", "mcnvb74", "dui_=645", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "¬j8ˋ", "90!hlrG", "JQWin", "^YT@gh", "Ii57Pu", "U(!wzc", "tTˋ9ˋnZ"]);	
+		}
 		
 		let textString;
 		let currentLesson = words;
@@ -241,7 +270,9 @@ const mapStateToProps = (state) => {
 		letterCorrect: state.letterCorrect,
 		activeLesson: state.activeLesson,
 		mistakesLength: state.mistakesLength,
-		mistakesTemp: state.mistakesTemp
+		mistakesTemp: state.mistakesTemp,
+		flagSelect1: state.flagSelect1,
+		flagSelect2: state.flagSelect2
 	
 		
 		

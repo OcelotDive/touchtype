@@ -9,7 +9,7 @@ class Lesson6Instructions extends Component {
 	render() {
 		
 	
-	let lesson6 = 'As always start with your fingers on the Home Row (Row 3) with your index fingers over F & J. Now for all of Row 2 at once apart from a few symbols. Row 2 is a very important row to learn as it contains some of the most commonly used letters in the English language, also home to the majority of the vowels on the keyboard, so take your time and remember accuracy first and the speed will come. Familiarise yourself with the keys and their finger positions before starting to type.';
+	let lesson6 = 'As always start with your fingers on the Home Row (Row 3) with your index fingers over F & J. Now for all of Row 2 at once apart from a few symbols. Row 2 is a very important row to learn as it contains some of the most commonly used letters in the English language, also home to the majority of the vowels on the keyboard, so take your time and remember accuracy first and the speed will come.';
 
 	
 
@@ -37,16 +37,16 @@ class Lesson6Instructions extends Component {
 			</div>
 			<div className="col">
 		
-			<div style={{backgroundColor: "green"}}>L5</div>
-			<div style={{backgroundColor: "green"}}>L4</div>
-			<div style={{backgroundColor: "green"}}>L3</div>
-			<div style={{backgroundColor: "green"}}>L2</div>
-			<div style={{backgroundColor: "green"}}>L2</div>
-			<div style={{backgroundColor: "yellow"}}>R2</div>
-			<div style={{backgroundColor: "yellow"}}>R2</div>
-			<div style={{backgroundColor: "yellow"}}>R3</div>
-			<div style={{backgroundColor: "yellow"}}>R4</div>
-			<div style={{backgroundColor: "yellow"}}>R5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L5</div>
+			<div style={{backgroundColor: "aliceblue"}}>L4</div>
+			<div style={{backgroundColor: "aliceblue"}}>L3</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>L2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R2</div>
+			<div style={{backgroundColor: "aliceblue"}}>R3</div>
+			<div style={{backgroundColor: "aliceblue"}}>R4</div>
+			<div style={{backgroundColor: "aliceblue"}}>R5</div>
 		
 			</div>
 			</div>

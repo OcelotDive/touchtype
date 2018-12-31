@@ -26,10 +26,12 @@ class Row5 extends Component {
 			<br/>
 			<br/>
 			</div>
+           
 			<div className="shiftHalf" id="AltRight">
 			<br/>
-			 altgr<br/>
+			 alt<br/>
 			</div>
+        
 			<div className="shiftHalf" id="OSRight">
 			<br/>
 			 win<br/>

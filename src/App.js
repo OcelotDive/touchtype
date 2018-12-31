@@ -7,6 +7,7 @@ import TimeFrame from './components/TimeFrame';
 import Info from './components/Info';
 import InstructionArea from './components/InstructionArea';
 import FinishPanel from './components/FinishPanel';
+import KeyboardSelect from './components/KeyboardSelect';
 class App extends Component {
   render() {
     return (
@@ -23,6 +24,7 @@ class App extends Component {
 		<TimeFrame />
 		<InstructionArea/>
 		<FinishPanel />
+		<KeyboardSelect />
       </div>
      
     );
