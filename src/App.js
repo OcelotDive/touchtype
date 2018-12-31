@@ -4,7 +4,6 @@ import TextArea from './components/TextArea';
 import LessonArea from './components/LessonArea';
 import ControlPanel from './components/ControlPanel';
 import TimeFrame from './components/TimeFrame';
-import Info from './components/Info';
 import InstructionArea from './components/InstructionArea';
 import FinishPanel from './components/FinishPanel';
 import KeyboardSelect from './components/KeyboardSelect';

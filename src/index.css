@@ -25,7 +25,7 @@ background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1)
 background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 100%); /* w3c */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */
 animation: fazeIn 3.5s ease-in;
-	
+overflow: hidden;
 }
 
 .keyboard {
@@ -203,9 +203,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', end
 }
 
 
-h7 {
+.h7 {
+	font-size: 14px;
 	text-decoration: underline;
-}
+
+	}
 
 .shiftHalfOn {
 	display: inline-block;
@@ -583,7 +585,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', end
 	margin-bottom: 2%;
 	margin-top: 20px;
 	top: 40px;
-
+	pointer-events: none;
 
 
 
@@ -631,7 +633,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005757', end
 	border: none;
 	white-space: pre;
 	display: inline-block;
-
+	pointer-events: none;
 
 	
 }
@@ -662,7 +664,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005757', end
 	border: none;
 	direction:rtl;
 	unicode-bidi: bidi-override;
-
+	pointer-events: none;
 	
 	
 	

@@ -44,6 +44,7 @@ const rootReducer = (state = initState, action) => {
                 let x = document.getElementById(_);
                 x.className = x.className.split(' ')[0];
 				if(x.id === 'Backslash'){x.className = 'mainKey specialKeyRule'};
+			
             })
 
 
@@ -130,11 +131,11 @@ const rootReducer = (state = initState, action) => {
             } else {
 
                 state.currentKey = state.shiftOnOff || state.capsOnOff && alpha ? action.id.attributes[3].value : action.id.attributes[2].value;
-                console.log('this is the current key ' + state.currentKey)
+                //console.log('this is the current key ' + state.currentKey)
                 //a test for mistakes
                 if (state.currentKey !== state.testString[0]) {
                     state.mistakes.push('x');
-                    console.log(state.mistakes.length)
+                    //console.log(state.mistakes.length)
                     state.mistakesLength = state.mistakes.length;
 
 
@@ -293,7 +294,6 @@ const rootReducer = (state = initState, action) => {
                 shiftOnOff: state.shiftOnOff,
                 currentClass: state.currentClass,
                 classChange: state.classChange,
-                classChange: state.classChange,
                 currentKey: state.currentKey,
                 testString: state.testString,
                 stringLength: state.stringLength,
@@ -411,7 +411,7 @@ const rootReducer = (state = initState, action) => {
             state.activeLesson = action.lessonNumber;
 
             state.lessonKeys = action.keys;
-            if (action.code == 1) {
+            if (action.code === 1) {
                 state.displayLessonsMenu = !state.displayLessonsMenu
             }
             //assigning colours to the left and right hand keys
@@ -722,7 +722,8 @@ const rootReducer = (state = initState, action) => {
             }
 
 
-
+			default:
+            break;
 
     }
 

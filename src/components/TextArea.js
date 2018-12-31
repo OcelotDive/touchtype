@@ -190,7 +190,7 @@ class TextArea extends Component {
 		
 		setTimeout(()=>{
 
-			console.log(this.props.letterCorrect)
+			
 			
 		let innerText = this.refs.innerText;
 		let innerTextUsed = this.refs.innerTextUsed;
@@ -245,10 +245,10 @@ class TextArea extends Component {
 		return(
 			<div className="typingArea">
 			<form>
-			<div className="textbox" id="textarea_id" ref="textarea_id" type="textArea" readonly='true' >
+			<div className="textbox" id="textarea_id" ref="textarea_id" type="textArea" readOnly={true} >
 			<div className="marker"></div>
-			<div className="innerTextBox" ref="innerText" readOnly="true"></div>
-			<textArea className="innerTextBoxUsed" ref="innerTextUsed" readOnly="true"   type="textArea"></textArea>
+			<div className="innerTextBox" ref="innerText" readOnly={true}></div>
+			<textarea className="innerTextBoxUsed" ref="innerTextUsed" readOnly={true}   type="textArea"></textarea>
 			</div>
 			
 			</form>

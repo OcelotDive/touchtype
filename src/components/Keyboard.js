@@ -16,7 +16,7 @@ class Keyboard extends Component {
 		 <div className={keyboardClass}>
 			<hr/>
 			<hr/>
-			<h7 style={{color: 'white'}}>FILCO</h7>
+			<span className="h7" style={{color: 'white'}}>FILCO</span>
 			<div className={capOnoff} id="capsLight1"></div>
 			<div className="capsLight2" id="capsLight2"></div>
 			<Row1 />
