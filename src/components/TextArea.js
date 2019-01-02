@@ -56,10 +56,10 @@ class TextArea extends Component {
 		
 		let lesson21;
 		if(this.props.flagSelect1 === 'usLayout flagHighlighted'){
-			lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi', "<\\3/g", "Hh8/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#V", "0=kK;", "fS~|\|", 'P"h}n#', "gm*,R5$", 'weop%', "y@qGG", "hiri8", "epo,9", "#:8d2", "Qwi1!2", "Z?82c", "/039G*", "H*(U)()", "bnj)&*", "@'kjkh7", "TK>/", ">sw", ")&JG76", "mcnvb74", "dui_=645", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "j8ˋ", "90!hlrG", "JQWin", "^YT@gh", "Ii57Pu", "U(!wzc", "tTˋ9ˋnZ"]);
+			lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi', "<\\3/g", "Hh/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#V", "0=kK;", "fS~|\|", 'P"hn#', "gm*,R5$", 'we%', "y@qG", "hir8", "epo,9", "#:d2", "Qwi1!2", "Z?82c", "/0G*", "H*(U)", "bnj)&*", "@'kj7", "TK>/", ">sw", ")&JG76", "mcnvb74", "dui_=64", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "j8ˋ", "90!hlr", "JQWin", "^YT@h", "I7Pu", "U(!wzc", "tTˋ9ˋnZ"]);
 		}
 		else {
-			lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi', "<\\3/g", "Hh8/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#¬V", "0=kK;", "fS~|\|", 'P"h}n#', "gm*,R5$", 'weop%', "y@qGG¬", "hiri8", "epo,9£", "#:8d2", "Qwi1!2", "Z?82c", "/039G*", "H*(U)()", "bnj)&*", "@'kjkh7", "TK>/", ">£sw", ")&JG76", "mcnvb74", "dui_=645", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "¬j8ˋ", "90!hlrG", "JQWin", "^YT@gh", "Ii57Pu", "U(!wzc", "tTˋ9ˋnZ"]);	
+			lesson21 = shuffle(["*.ei", "iIqP3", '-_=qi', "<\\3/g", "Hh/.", "Qiu8[", ",#ˋ", "1&s%", "^ip+", "+Gg|", "e'Ez}", "Bc)A!", "#¬V", "0=kK;", "fS~|\|", 'P"hn#', "gm*,R5$", 'we%', "y@qG¬", "hir8", "epo,9£", "#:d2", "Qwi1!2", "Z?82c", "/0G*", "H*(U)", "bnj)&*", "@'kj7", "TK>/", ">£sw", ")&JG76", "mcnvb74", "dui_=64", "~;j57", "MN", ".jf93.", "9G", "|F6", "$y{gdr}", "09uh(", "¬j8ˋ", "90!hlr", "JQWin", "^YT@h", "I7Pu", "U(!wzc", "tTˋ9ˋnZ"]);	
 		}
 		
 		let textString;
