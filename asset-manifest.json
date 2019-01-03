@@ -1,11 +1,12 @@
 {
-  "main.css": "static/css/main.58d9c7ee.css",
-  "main.css.map": "static/css/main.58d9c7ee.css.map",
-  "main.js": "static/js/main.26adbf50.js",
-  "main.js.map": "static/js/main.26adbf50.js.map",
+  "main.css": "static/css/main.e62d3aae.css",
+  "main.css.map": "static/css/main.e62d3aae.css.map",
+  "main.js": "static/js/main.c65ea4f7.js",
+  "main.js.map": "static/js/main.c65ea4f7.js.map",
   "static\\media\\Green-Tick2.png": "static/media/Green-Tick2.1e9ed879.png",
   "static\\media\\hands.jpg": "static/media/hands.a5cc0df5.jpg",
   "static\\media\\keys.jpg": "static/media/keys.06fffab3.jpg",
   "static\\media\\laptop.jpg": "static/media/laptop.2334711e.jpg",
+  "static\\media\\nokeyboard.png": "static/media/nokeyboard.693dae1a.png",
   "static\\media\\typingFast.jpg": "static/media/typingFast.5663e33c.jpg"
 }
