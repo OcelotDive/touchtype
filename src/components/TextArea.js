@@ -15,7 +15,7 @@ class TextArea extends Component {
 		let lesson4 = shuffle(['ry', 'iiuurtiy', 'uiuirtrt', 'itruy', 'ytytriiu', 'rutyirriyt', 'uyi', 'tryui', 'ytriiuy', 'iuy', 'ttry', 'truy', 'yyrrtiu']);
 		let lesson5 = shuffle(['woopwq', 'oopqqw', 'ppoopow', 'qwqwop', 'popqw', 'woqp', 'opwooqqp', 'wop', 'pow', 'qwop', 'owow', 'owpowqow', 'qwppqqoow', 'op', 'qw', 'owpq']);
 		let lesson6 = shuffle(['qpiou', 'toop', 'prot', 'iopert', 'iwpqiru', 'poor', 'rotter', 'iutwpo', 'tere', 'pouy', 'qytio', 'eerie', 'tyr', 'trtry', 'uot', 'trew', 'pwipe', 'ooree', 'qwerty', 'pyytrre']);
-		let lesson7 = shuffle(['qled', ';ilhde', 'ghieos', 'ppqlshg', 'jfiedo', 'yqpe', 'yi;s;eid', 'poiedgg', 'gheikow', 'qllhiel', 'ikpkqlly', 'idreekjg', 'jfpofjeit', 'ihg', 's;id', 'ied', 'is;ytqap', 'idkels', 'podl;slke']);
+		let lesson7 = shuffle(['qled', ';ilhde', 'ghieos', 'ppqlshg', 'jfiedo', 'yqpe', 'yi;s;eid', 'poiedgg', 'gheikow', 'qllhiel', 'ikpkqlly', 'idrekjg', 'jfpjeit', 'ihg', 's;id', 'ied', 'is;ytqap', 'idkels', 'podl;slke']);
 		
 		
 		let lesson8 = shuffle(['vvbbnnmm', 'vb', 'nm', 'mvbn', 'vbnm', 'nvbm', 'vvbbnnmm',  'nmvn', 'bbmmnvb', 'mvmbmmnm', 'vbvbmnnmv', 'vbbnnbmv', 'nbmv']);
