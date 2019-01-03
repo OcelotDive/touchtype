@@ -5,6 +5,7 @@ import Row2 from './Row2';
 import Row3 from './Row3';
 import Row4 from './Row4';
 import Row5 from './Row5';
+import Draggable, {DraggableCore} from 'react-draggable';
 class Keyboard extends Component {
 	
 	
@@ -12,7 +13,9 @@ class Keyboard extends Component {
 			let capOnoff = this.props.capsOnOff ? 'capsLight1On' : 'capsLight1';
 			let keyboardClass = this.props.keyboardIsOn ? 'keyboard' : 'keyboardOff';
 		return (
-            
+            <Draggable  defaultPosition={{x: 0, y: 0}}
+        position={null}
+        grid={[1, 1]}>
 		 <div className={keyboardClass}>
 			<hr/>
 			<hr/>
@@ -26,6 +29,7 @@ class Keyboard extends Component {
 			<Row5 />
 			<hr/>
 		 </div>
+			</Draggable>
 		)
 	}
 }
