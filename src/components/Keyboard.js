@@ -13,9 +13,7 @@ class Keyboard extends Component {
 			let capOnoff = this.props.capsOnOff ? 'capsLight1On' : 'capsLight1';
 			let keyboardClass = this.props.keyboardIsOn ? 'keyboard' : 'keyboardOff';
 		return (
-            <Draggable  defaultPosition={{x: 0, y: 0}}
-        position={null}
-        grid={[1, 1]}>
+            <Draggable>
 		 <div className={keyboardClass}>
 			<hr/>
 			<hr/>
