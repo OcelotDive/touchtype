@@ -680,12 +680,12 @@ const rootReducer = (state = initState, action) => {
                 x.className = x.className.split(' ')[0];
             })
             
-            
-            
+          
+          
             switch (action.flag) {
 
                 case 'usLayout flagHighlighted':
-                    state.flagSelect1 = `${action.flag} flagHighlighted`;
+                    state.flagSelect1 = `usLayout flagHighlighted`;
                     state.flagSelect2 = `ukLayout`;
                     break;
                 case 'usLayout':
@@ -695,7 +695,11 @@ const rootReducer = (state = initState, action) => {
                 case 'ukLayout':
                     state.flagSelect2 = `${action.flag} flagHighlighted`;
                     state.flagSelect1 = `usLayout`;
-                    break;
+                    break;	
+				case 'ukLayout flagHighlighted':
+					state.flagSelect2 = `ukLayout flagHighlighted`;
+					state.flagSelect1 = `usLayout`;
+					break;
                 default:
                     state.flagSelect1 = `usLayout flagHighlighted`;
                     break;
