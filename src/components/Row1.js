@@ -25,7 +25,7 @@ class Row1 extends Component {
 	}
 		
 	else if (e.code){	
-		alert('e.code' + e.code)
+		
 	let currentKey = document.getElementById(e.code);
 	
 	this.props.classChange(currentKey);	
@@ -131,7 +131,6 @@ class Row1 extends Component {
 			}
 		
 		this.props.classChangeOff(releasedKey);
-	}	
 		
 	}	
 		
