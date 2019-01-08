@@ -84,10 +84,57 @@ class Row1 extends Component {
 	if(e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 91 || e.keyCode === 93){
 		return false;
 	}
-	else {
+	else if (e.code){
 	let releasedKey = document.getElementById(e.code);
 	this.props.classChangeOff(releasedKey);
 		}
+	else{
+		let releasedKey;
+		switch (e.keyCode) {
+
+				case 49:
+					releasedKey = "Digit1";
+					break;
+				case 50:
+					releasedKey = "Digit2";
+					break;
+				case 51:
+					releasedKey = "Digit3";
+					break;
+				case 52:
+					releasedKey = "Digit4";
+					break;
+				case 53:
+					releasedKey = "Digit5";
+					break;
+				case 54:
+					releasedKey = "Digit6";
+					break;
+				case 55:
+					releasedKey = "Digit7";
+					break;
+				case 56:
+					releasedKey = "Digit8";
+					break;
+				case 57:
+					releasedKey = "Digit9";
+					break;
+				case 48:
+					releasedKey = "Digit0";
+					break;
+				
+				default:
+					
+					break;
+
+
+			}
+		
+		this.props.classChangeOff(releasedKey);
+	}	
+		
+	}	
+		
 	}
 	
 	
