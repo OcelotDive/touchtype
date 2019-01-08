@@ -24,12 +24,54 @@ class Row1 extends Component {
 		return false;
 	}
 		
-	else{	
-		console.log(e) 
+	else if (e.code){	
+		
 	let currentKey = document.getElementById(e.code);
 	
 	this.props.classChange(currentKey);	
 	}
+	else{
+		let currentKey;
+		switch (e.keyCode) {
+
+				case 49:
+					currentKey = "Digit1";
+					break;
+				case 50:
+					currentKey = "Digit2";
+					break;
+				case 51:
+					currentKey = "Digit3";
+					break;
+				case 52:
+					currentKey = "Digit4";
+					break;
+				case 53:
+					currentKey = "Digit5";
+					break;
+				case 54:
+					currentKey = "Digit6";
+					break;
+				case 55:
+					currentKey = "Digit7";
+					break;
+				case 56:
+					currentKey = "Digit8";
+					break;
+				case 57:
+					currentKey = "Digit9";
+					break;
+				case 48:
+					currentKey = "Digit0";
+					break;
+				
+				default:
+					
+					break;
+
+
+			}
+	}	
 		
 	}
 	
