@@ -38,11 +38,11 @@ const rootReducer = (state = initState, action) => {
 			//start timer
 			state.timeOn = true;
 
-
+			alert(state.lessonKeys);
 
 			//return className to default after any key press (coloured keys)
 			state.lessonKeys.map((_, i, a) => {
-				alert(a)
+				
 				let x = document.getElementById(_);
 				x.className = x.className.split(' ')[0];
 				
