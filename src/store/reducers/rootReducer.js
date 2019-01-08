@@ -42,7 +42,7 @@ const rootReducer = (state = initState, action) => {
 			
 			//return className to default after any key press (coloured keys)
 			state.lessonKeys.map((_, i, a) => {
-				alert(state.lessonKeys + ' test');
+				
 				let x = document.getElementById(_);
 				x.className = x.className.split(' ')[0];
 				
@@ -123,7 +123,7 @@ const rootReducer = (state = initState, action) => {
 				alpha = true;
 
 			}
-
+			alert(action.id.id)
 			//has caps been pressed
 			if (action.id.id === 'CapsLock') {
 
