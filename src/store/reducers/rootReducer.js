@@ -52,7 +52,7 @@ const rootReducer = (state = initState, action) => {
 
 			})
 
-			alert(action.id)
+			
 			//null return in case unwanted key pressed
 			if (action.id === null) {
 				return {
