@@ -44,7 +44,7 @@ const rootReducer = (state = initState, action) => {
 			state.lessonKeys.map((_, i, a) => {
 				let x = document.getElementById(_);
 				x.className = x.className.split(' ')[0];
-				alert(x.id)
+				alert(x)
 				if (x.id === 'Backslash') {
 					x.className = 'mainKey specialKeyRule'
 				};
