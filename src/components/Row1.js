@@ -31,6 +31,7 @@ class Row1 extends Component {
 	this.props.classChange(currentKey);	
 	}
 	else{
+		alert('no e.code')
 		let currentKey;
 		switch (e.keyCode) {
 
