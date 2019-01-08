@@ -14,7 +14,7 @@ class Row1 extends Component {
 
 	
 	handleKeyPress = (e) => {
-	alert(e.keyCode);
+	
 		e.preventDefault();
 		
 
