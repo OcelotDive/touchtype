@@ -42,9 +42,10 @@ const rootReducer = (state = initState, action) => {
 
 			//return className to default after any key press (coloured keys)
 			state.lessonKeys.map((_, i, a) => {
+				alert(a)
 				let x = document.getElementById(_);
 				x.className = x.className.split(' ')[0];
-				alert(x)
+				
 				if (x.id === 'Backslash') {
 					x.className = 'mainKey specialKeyRule'
 				};
