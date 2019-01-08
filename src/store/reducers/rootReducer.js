@@ -52,7 +52,7 @@ const rootReducer = (state = initState, action) => {
 
 			})
 
-
+			alert(action.id)
 			//null return in case unwanted key pressed
 			if (action.id === null) {
 				return {
@@ -123,7 +123,7 @@ const rootReducer = (state = initState, action) => {
 				alpha = true;
 
 			}
-			alert(action.id.id)
+		
 			//has caps been pressed
 			if (action.id.id === 'CapsLock') {
 
