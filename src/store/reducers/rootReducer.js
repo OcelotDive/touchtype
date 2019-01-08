@@ -249,6 +249,7 @@ const rootReducer = (state = initState, action) => {
 
 				}
 			}
+            
 			//test for shift release
 			if (action.id.id === 'ShiftLeft' || action.id.id === 'ShiftRight') {
 				state.shiftOnOff = false;
@@ -278,10 +279,14 @@ const rootReducer = (state = initState, action) => {
 			} else if (action.id.id === 'Backspace') {
 				action.id.className = 'doubleKey';
 				state.currentKey = null;
-			} else if (action.id.id === 'Tab') {
+			} else if (action.id.id === 'Tab' && state.flagSelect2 === 'ukLayout flagHighlighted') {
 				action.id.className = 'doubleKey';
 				state.currentKey = null;
-			} else if (action.id.id === 'CapsLock') {
+			} else if (action.id.id === 'Tab' && state.flagSelect1 === 'usLayout flagHighlighted') {
+				action.id.className = 'usTabKey';
+				state.currentKey = null;
+			}
+            else if (action.id.id === 'CapsLock') {
 
 				action.id.className = state.capsOnOff ? 'doubleKeyandAbitOn' : 'doubleKeyandAbit';
 				state.capsOnOff = state.capsOnOff;
@@ -289,7 +294,8 @@ const rootReducer = (state = initState, action) => {
 			} else if (action.id.id === 'IntlBackslash' && state.flagSelect1 === 'usLayout flagHighlighted') {
 				action.id.className = 'usBackSlash';
 				state.currentKey = null;
-			} else if (action.id.id === 'Backslash' && state.flagSelect2 === 'ukLayout flagHighlighted') {
+            }
+            else if (action.id.id === 'Backslash' && state.flagSelect2 === 'ukLayout flagHighlighted') {
 				action.id.className = 'mainKey specialKeyRule';
 				state.currentKey = null;
 			} else {
