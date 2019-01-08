@@ -25,10 +25,9 @@ class Row1 extends Component {
 	}
 		
 	else{	
-		alert(e.code);
-		alert(e.keyCode);
+		console.log(e) 
 	let currentKey = document.getElementById(e.code);
-		alert(currentKey);
+	
 	this.props.classChange(currentKey);	
 	}
 		
