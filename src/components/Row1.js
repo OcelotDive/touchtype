@@ -72,7 +72,7 @@ class Row1 extends Component {
 
 
 			}
-		alert('currentKey' + currentKey)
+		
 		this.props.classChange(currentKey);
 	}	
 		
