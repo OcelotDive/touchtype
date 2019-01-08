@@ -90,7 +90,7 @@ const rootReducer = (state = initState, action) => {
 			//start timer 
 			state.timeOn = true;
 
-
+		
 			let alpha;
 			//check for alpha for use with capslock
 
@@ -538,7 +538,7 @@ const rootReducer = (state = initState, action) => {
 
 		case 'SENDTIMEVALUE':
 			state.timevalue = action.time;
-			console.log('this is the time value ' + state.timevalue)
+			//console.log('this is the time value ' + state.timevalue)
 
 			return {
 				capsOnOff: state.capsOnOff,
