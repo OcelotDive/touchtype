@@ -420,8 +420,9 @@ const rootReducer = (state = initState, action) => {
 			state.mistakesTemp = 0;
 			state.usedString = '';
 			state.activeLesson = action.lessonNumber;
-			alert(action.keys);
+			
 			state.lessonKeys = action.keys;
+			alert(state.lessonKeys)
 			if (action.code === 1) {
 				state.displayLessonsMenu = !state.displayLessonsMenu
 			}
