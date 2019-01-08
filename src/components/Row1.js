@@ -14,7 +14,7 @@ class Row1 extends Component {
 
 	
 	handleKeyPress = (e) => {
-	alert('ie test')
+	alert(e.keyCode);
 		e.preventDefault();
 		
 
