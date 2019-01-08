@@ -39,7 +39,7 @@ const rootReducer = (state = initState, action) => {
 			state.timeOn = true;
 
 			
-
+			alert(state.lessonKeys);
 			//return className to default after any key press (coloured keys)
 			state.lessonKeys.map((_, i, a) => {
 				
@@ -422,7 +422,7 @@ const rootReducer = (state = initState, action) => {
 			state.activeLesson = action.lessonNumber;
 			
 			state.lessonKeys = action.keys;
-			alert(state.lessonKeys)
+			
 			if (action.code === 1) {
 				state.displayLessonsMenu = !state.displayLessonsMenu
 			}
