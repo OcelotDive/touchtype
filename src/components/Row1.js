@@ -16,7 +16,7 @@ class Row1 extends Component {
 	handleKeyPress = (e) => {
 	
 		e.preventDefault();
-		let unusedKeys = [27,112,113,114,115,116,117,118,119,120,121,122,123,145,19,45,36,33,46,35,34,38,17,18,91,93,37,40,39,144,111,106,109,103,104,105,100,101,102,97,98,99,96,110,107, 17, 18, 91,93];
+		
 console.log(e)
 	
 	
@@ -191,9 +191,6 @@ console.log(e)
 					break;
 				case 190:
 					currentKey = document.getElementById("Period");
-					break;
-				case 191:
-					currentKey = document.getElementById("Slash");
 					break;
 				case 191:
 					currentKey = document.getElementById("Slash");
@@ -382,9 +379,6 @@ console.log(e)
 					break;
 				case 190:
 					releasedKey = document.getElementById("Period");
-					break;
-				case 191:
-					releasedKey = document.getElementById("Slash");
 					break;
 				case 191:
 					releasedKey = document.getElementById("Slash");

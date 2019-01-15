@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import Lorem from 'react-lorem-component';
 class TextArea extends Component {
 	
-	
-
+	/* eslint-disable */
+	//concatenation of literals
 	
 	render() {
 		let words = shuffle(['ad','dolor', '@','Lorem', 'ipsum', 'sit']);

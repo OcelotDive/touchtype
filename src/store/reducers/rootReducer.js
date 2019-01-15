@@ -1,3 +1,5 @@
+/* eslint-disable */
+//non return of arrow function
 const initState = {
 	timeOn: false,
 	capsOnOff: false,
