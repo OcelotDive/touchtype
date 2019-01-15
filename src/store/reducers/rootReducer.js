@@ -4,172 +4,172 @@
 import keyboardOperations from './keyboardOperations';
 
 const initState = {
-	timeOn: false,
-	capsOnOff: false,
-	shiftOnOff: false,
-	currentClass: '',
-	classChange: 'keyStruck',
-	currentKey: null,
-	testString: '',
-	stringLength: 0,
-	fetchText: true,
-	letterCorrect: false,
-	usedString: ' ',
-	displayLessonsMenu: false,
-	activeLesson: [],
-	lessonKeys: [],
-	intervalId: [],
-	mistakes: [],
-	mistakesLength: 0,
-	mistakesTemp: 0,
-	timevalue: '00:00',
-	stringEnd: false,
-	wpm: 0,
-	finishShow: false,
-	flagSelect1: 'usLayout flagHighlighted',
-	flagSelect2: 'ukLayout',
-	keyboardIsOn: true
+    timeOn: false,
+    capsOnOff: false,
+    shiftOnOff: false,
+    currentClass: '',
+    classChange: 'keyStruck',
+    currentKey: null,
+    testString: '',
+    stringLength: 0,
+    fetchText: true,
+    letterCorrect: false,
+    usedString: ' ',
+    displayLessonsMenu: false,
+    activeLesson: [],
+    lessonKeys: [],
+    intervalId: [],
+    mistakes: [],
+    mistakesLength: 0,
+    mistakesTemp: 0,
+    timevalue: '00:00',
+    stringEnd: false,
+    wpm: 0,
+    finishShow: false,
+    flagSelect1: 'usLayout flagHighlighted',
+    flagSelect2: 'ukLayout',
+    keyboardIsOn: true
 
 }
 
 
 const rootReducer = (state = initState, action) => {
 
-	switch (action.type) {
+    switch (action.type) {
 
 
-		//handles general key presses
-		case 'PRESSED':
-			
+        //handles general key presses
+        case 'PRESSED':
+
             keyboardOperations.keyboardKeyPress(state, action);
 
-			return {
-				...state
-			}
-
-			
-		case 'RELEASED':
-            
-			keyboardOperations.keyboardKeyRelease(state, action);
-            
-			return {
-				...state
-			}
+            return {
+                ...state
+            }
 
 
+        case 'RELEASED':
 
-			//handles initial string data set
-		case 'SENDSTRING':
+            keyboardOperations.keyboardKeyRelease(state, action);
+
+            return {
+                ...state
+            }
+
+
+
+            //handles initial string data set
+        case 'SENDSTRING':
 
             keyboardOperations.randomStringReceived(state, action)
-            
-			return {
-				...state
-			}
+
+            return {
+                ...state
+            }
 
 
-		case 'LESSONSMENU':
-			//returning className to default after menu open
-			keyboardOperations.openCloseLessonmenu(state);
+        case 'LESSONSMENU':
+            //returning className to default after menu open
+            keyboardOperations.openCloseLessonmenu(state);
 
-			return {
-				...state
-			}
+            return {
+                ...state
+            }
 
-		case 'STARTLESSON':
-			
-            keyboardOperations.lessonBegin(state,action);
+        case 'STARTLESSON':
 
-			return {
-				...state
-			}
+            keyboardOperations.lessonBegin(state, action);
 
-		case 'INTERVALID':
-			keyboardOperations.intervalIdReceived(state, action);
-		
-			return {
-				...state
-			}
+            return {
+                ...state
+            }
 
-		case 'SENDTIMEVALUE':
-            
-			keyboardOperations.timeValueReceived(state, action);
-			
-			return {
-				...state
-			}
+        case 'INTERVALID':
+            keyboardOperations.intervalIdReceived(state, action);
 
-		case 'SENDEND':
-			
+            return {
+                ...state
+            }
+
+        case 'SENDTIMEVALUE':
+
+            keyboardOperations.timeValueReceived(state, action);
+
+            return {
+                ...state
+            }
+
+        case 'SENDEND':
+
             keyboardOperations.endOfString(state);
-			return {
-				...state
-			}
-		case 'SENDWPM':
+            return {
+                ...state
+            }
+        case 'SENDWPM':
 
-			keyboardOperations.wordsPerMinute(state, action);
+            keyboardOperations.wordsPerMinute(state, action);
 
-			return {
-				...state
-			}
+            return {
+                ...state
+            }
 
-		case 'PANELOFF':
+        case 'PANELOFF':
 
-			keyboardOperations.turnPanelOff(state);
+            keyboardOperations.turnPanelOff(state);
 
-			return {
-				...state
-			}
+            return {
+                ...state
+            }
 
-		case 'FLAGCLICK':
-			//return all key classes to normal
-			keyboardOperations.changeKeyboard(state,action)
+        case 'FLAGCLICK':
+            //return all key classes to normal
+            keyboardOperations.changeKeyboard(state, action)
 
-			return {
-				timeOn: false,
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: false,
-				currentClass: '',
-				classChange: 'keyStruck',
-				currentKey: null,
-				testString: '',
-				stringLength: 0,
-				fetchText: true,
-				letterCorrect: false,
-				usedString: ' ',
-				displayLessonsMenu: false,
-				activeLesson: [],
-				lessonKeys: [],
-				intervalId: [],
-				mistakes: [],
-				mistakesLength: 0,
-				mistakesTemp: 0,
-				timevalue: '00:00',
-				stringEnd: false,
-				wpm: 0,
-				finishShow: false,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
+            return {
+                timeOn: false,
+                capsOnOff: state.capsOnOff,
+                shiftOnOff: false,
+                currentClass: '',
+                classChange: 'keyStruck',
+                currentKey: null,
+                testString: '',
+                stringLength: 0,
+                fetchText: true,
+                letterCorrect: false,
+                usedString: ' ',
+                displayLessonsMenu: false,
+                activeLesson: [],
+                lessonKeys: [],
+                intervalId: [],
+                mistakes: [],
+                mistakesLength: 0,
+                mistakesTemp: 0,
+                timevalue: '00:00',
+                stringEnd: false,
+                wpm: 0,
+                finishShow: false,
+                flagSelect1: state.flagSelect1,
+                flagSelect2: state.flagSelect2,
+                keyboardIsOn: state.keyboardIsOn
 
-			}
+            }
 
-		case 'KEYBOARDONOFF':
+        case 'KEYBOARDONOFF':
 
-			keyboardOperations.switchKeyboardOnOff(state);
+            keyboardOperations.switchKeyboardOnOff(state);
 
-			return {
-				...state
-			}
+            return {
+                ...state
+            }
 
-		default:
-        break;
+        default:
+            break;
 
-	}
+    }
 
 
 
-	return state;
+    return state;
 }
 
 export default rootReducer;
