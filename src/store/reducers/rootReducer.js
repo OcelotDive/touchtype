@@ -40,51 +40,25 @@ const rootReducer = (state = initState, action) => {
 			//start timer
 			state.timeOn = true;
 
-			
-			
+
+
 			//return className to default after any key press (coloured keys)
 			state.lessonKeys.map((_, i, a) => {
-				
+
 				let x = document.getElementById(_);
 				x.className = x.className.split(' ')[0];
-				
+
 				if (x.id === 'Backslash') {
 					x.className = 'mainKey specialKeyRule'
 				};
 
 			})
 
-			
+
 			//null return in case unwanted key pressed
 			if (action.id === null) {
 				return {
-					capsOnOff: state.capsOnOff,
-					shiftOnOff: state.shiftOnOff,
-					currentClass: state.currentClass,
-					classChange: state.classChange,
-					currentKey: state.currentKey,
-					testString: state.testString,
-					stringLength: state.stringLength,
-					fetchText: state.fetchText,
-					letterCorrect: state.letterCorrect,
-					usedString: state.usedString,
-					activeLesson: state.activeLesson,
-					displayLessonsMenu: state.displayLessonsMenu,
-					lessonKeys: state.lessonKeys,
-					timeOn: state.timeOn,
-					intervalId: state.intervalId,
-					mistakes: state.mistakes,
-					mistakesLength: state.mistakesLength,
-					mistakesTemp: state.mistakesTemp,
-					timevalue: state.timevalue,
-					stringEnd: state.stringEnd,
-					wpm: state.wpm,
-					finishShow: state.finishShow,
-					flagSelect1: state.flagSelect1,
-					flagSelect2: state.flagSelect2,
-					keyboardIsOn: state.keyboardIsOn
-
-
+					...state
 				}
 			}
 
@@ -92,7 +66,7 @@ const rootReducer = (state = initState, action) => {
 			//start timer 
 			state.timeOn = true;
 
-		
+
 			let alpha;
 			//check for alpha for use with capslock
 
@@ -125,7 +99,7 @@ const rootReducer = (state = initState, action) => {
 				alpha = true;
 
 			}
-		
+
 			//has caps been pressed
 			if (action.id.id === 'CapsLock') {
 
@@ -174,43 +148,13 @@ const rootReducer = (state = initState, action) => {
 
 
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				letterCorrect: state.letterCorrect,
-				usedString: state.usedString,
-				activeLesson: state.activeLesson,
-				displayLessonsMenu: state.displayLessonsMenu,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
-
+				...state
 			}
 
 
 
 			//handles general key release
 		case 'RELEASED':
-
-
 
 			//return key to unpressed class
 			state.currentKey = null;
@@ -221,37 +165,10 @@ const rootReducer = (state = initState, action) => {
 			if (action.id === null) {
 				state.currentKey = null;
 				return {
-					capsOnOff: state.capsOnOff,
-					shiftOnOff: state.shiftOnOff,
-					currentClass: state.currentClass,
-					classChange: state.classChange,
-					currentKey: state.currentKey,
-					testString: state.testString,
-					stringLength: state.stringLength,
-					fetchText: state.fetchText,
-					letterCorrect: state.letterCorrect,
-					displayLessonsMenu: state.displayLessonsMenu,
-					usedString: state.usedString,
-					activeLesson: state.activeLesson,
-					lessonKeys: state.lessonKeys,
-					timeOn: state.timeOn,
-					intervalId: state.intervalId,
-					mistakes: state.mistakes,
-					mistakesLength: state.mistakesLength,
-					mistakesTemp: state.mistakesTemp,
-					timevalue: state.timevalue,
-					stringEnd: state.stringEnd,
-					wpm: state.wpm,
-					finishShow: state.finishShow,
-					flagSelect1: state.flagSelect1,
-					flagSelect2: state.flagSelect2,
-					keyboardIsOn: state.keyboardIsOn
-
-
-
+					...state
 				}
 			}
-            
+
 			//test for shift release
 			if (action.id.id === 'ShiftLeft' || action.id.id === 'ShiftRight') {
 				state.shiftOnOff = false;
@@ -287,8 +204,7 @@ const rootReducer = (state = initState, action) => {
 			} else if (action.id.id === 'Tab' && state.flagSelect1 === 'usLayout flagHighlighted') {
 				action.id.className = 'usTabKey';
 				state.currentKey = null;
-			}
-            else if (action.id.id === 'CapsLock') {
+			} else if (action.id.id === 'CapsLock') {
 
 				action.id.className = state.capsOnOff ? 'doubleKeyandAbitOn' : 'doubleKeyandAbit';
 				state.capsOnOff = state.capsOnOff;
@@ -296,8 +212,7 @@ const rootReducer = (state = initState, action) => {
 			} else if (action.id.id === 'IntlBackslash' && state.flagSelect1 === 'usLayout flagHighlighted') {
 				action.id.className = 'usBackSlash';
 				state.currentKey = null;
-            }
-            else if (action.id.id === 'Backslash' && state.flagSelect2 === 'ukLayout flagHighlighted') {
+			} else if (action.id.id === 'Backslash' && state.flagSelect2 === 'ukLayout flagHighlighted') {
 				action.id.className = 'mainKey specialKeyRule';
 				state.currentKey = null;
 			} else {
@@ -306,34 +221,7 @@ const rootReducer = (state = initState, action) => {
 
 			}
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				letterCorrect: state.letterCorrect,
-				usedString: state.usedString,
-				activeLesson: state.activeLesson,
-				displayLessonsMenu: state.displayLessonsMenu,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
+				...state
 			}
 
 
@@ -347,33 +235,7 @@ const rootReducer = (state = initState, action) => {
 			state.stringLength = action.value.length;
 			state.fetchText = false;
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				usedString: state.usedString,
-				displayLessonsMenu: state.displayLessonsMenu,
-				activeLesson: state.activeLesson,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
+				...state
 			}
 
 
@@ -387,33 +249,7 @@ const rootReducer = (state = initState, action) => {
 			state.displayLessonsMenu = !state.displayLessonsMenu
 
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				usedString: state.usedString,
-				displayLessonsMenu: state.displayLessonsMenu,
-				activeLesson: state.activeLesson,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
+				...state
 			}
 
 		case 'STARTLESSON':
@@ -428,9 +264,9 @@ const rootReducer = (state = initState, action) => {
 			state.mistakesTemp = 0;
 			state.usedString = '';
 			state.activeLesson = action.lessonNumber;
-			
+
 			state.lessonKeys = action.keys;
-			
+
 			if (action.code === 1) {
 				state.displayLessonsMenu = !state.displayLessonsMenu
 			}
@@ -478,34 +314,7 @@ const rootReducer = (state = initState, action) => {
 			state.fetchText = true;
 
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				usedString: state.usedString,
-				displayLessonsMenu: state.displayLessonsMenu,
-				activeLesson: state.activeLesson,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
-
+				...state
 			}
 
 		case 'INTERVALID':
@@ -513,34 +322,7 @@ const rootReducer = (state = initState, action) => {
 			console.log(state.intervalId)
 
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				usedString: state.usedString,
-				displayLessonsMenu: state.displayLessonsMenu,
-				activeLesson: state.activeLesson,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
-
+				...state
 			}
 
 
@@ -549,34 +331,7 @@ const rootReducer = (state = initState, action) => {
 			//console.log('this is the time value ' + state.timevalue)
 
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				usedString: state.usedString,
-				displayLessonsMenu: state.displayLessonsMenu,
-				activeLesson: state.activeLesson,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
-
+				...state
 			}
 
 		case 'SENDEND':
@@ -586,68 +341,14 @@ const rootReducer = (state = initState, action) => {
 			console.log(state.newClass);
 
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				usedString: state.usedString,
-				displayLessonsMenu: state.displayLessonsMenu,
-				activeLesson: state.activeLesson,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
-
+				...state
 			}
 		case 'SENDWPM':
 
 			state.wpm = Math.round(action.value);
 
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				usedString: state.usedString,
-				displayLessonsMenu: state.displayLessonsMenu,
-				activeLesson: state.activeLesson,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
-
+				...state
 			}
 
 		case 'PANELOFF':
@@ -655,34 +356,7 @@ const rootReducer = (state = initState, action) => {
 			state.finishShow = false;
 
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				usedString: state.usedString,
-				displayLessonsMenu: state.displayLessonsMenu,
-				activeLesson: state.activeLesson,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
-
+				...state
 			}
 
 		case 'FLAGCLICK':
@@ -758,39 +432,11 @@ const rootReducer = (state = initState, action) => {
 
 
 			return {
-				capsOnOff: state.capsOnOff,
-				shiftOnOff: state.shiftOnOff,
-				currentClass: state.currentClass,
-				classChange: state.classChange,
-				currentKey: state.currentKey,
-				testString: state.testString,
-				stringLength: state.stringLength,
-				fetchText: state.fetchText,
-				letterCorrect: state.letterCorrect,
-				usedString: state.usedString,
-				activeLesson: state.activeLesson,
-				displayLessonsMenu: state.displayLessonsMenu,
-				lessonKeys: state.lessonKeys,
-				timeOn: state.timeOn,
-				intervalId: state.intervalId,
-				mistakes: state.mistakes,
-				mistakesLength: state.mistakesLength,
-				mistakesTemp: state.mistakesTemp,
-				timevalue: state.timevalue,
-				stringEnd: state.stringEnd,
-				wpm: state.wpm,
-				finishShow: state.finishShow,
-				flagSelect1: state.flagSelect1,
-				flagSelect2: state.flagSelect2,
-				keyboardIsOn: state.keyboardIsOn
-
-
-
-
+				...state
 			}
 
 		default:
-		break;
+			break;
 
 	}
 
