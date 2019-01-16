@@ -16,7 +16,7 @@ class Row1 extends Component {
 	handleKeyPress = (e) => {
 	
 		e.preventDefault();
-	let capsStart = e.getModifierState("CapsLock");
+	let capsDown = e.getModifierState("CapsLock");
 	
 	if(e.keyCode === 27 || e.keyCode === 112 || e.keyCode === 113 || e.keyCode === 114 || e.keyCode === 115 || e.keyCode === 116 || e.keyCode === 117 || e.keyCode === 118 || e.keyCode === 119 || e.keyCode === 120 || e.keyCode === 121 || e.keyCode === 122 || e.keyCode === 123 || e.keyCode === 145 || e.keyCode === 19 || e.keyCode === 45 || e.keyCode === 36 || e.keyCode === 33 || e.keyCode === 46 || e.keyCode === 35 || e.keyCode === 34 || e.keyCode === 38 || e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 91 || e.keyCode === 93 || e.keyCode === 37 || e.keyCode === 40 || e.keyCode === 39 || e.keyCode === 144 || e.keyCode === 111 || e.keyCode === 106 || e.keyCode === 109 || e.keyCode === 103 || e.keyCode === 104 || e.keyCode === 105 || e.keyCode === 100 || e.keyCode === 101 || e.keyCode === 102 || e.keyCode === 97 || e.keyCode === 98 || e.keyCode === 99 || e.keyCode === 96 || e.keyCode === 110 || e.keyCode === 107 || e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 91 || e.keyCode === 93){
 		return false;
@@ -30,7 +30,7 @@ class Row1 extends Component {
 		
 	let currentKey = document.getElementById(e.code);
 	
-	this.props.classChange(currentKey, capsStart);	
+	this.props.classChange(currentKey, capsDown);	
 	}
 		//added because ie seems to rewrite the rules for keyboard event objects
 	else{
@@ -207,7 +207,7 @@ class Row1 extends Component {
 
 			}
 		
-		this.props.classChange(currentKey, capsStart);
+		this.props.classChange(currentKey, capsDown);
 	}	
 		
 	}
@@ -216,14 +216,14 @@ class Row1 extends Component {
 	
 	handleKeyUp = (e) => {
 		
-		let capsStart = e.getModifierState("CapsLock");
+		let capsDown = e.getModifierState("CapsLock");
 		
 	if(e.keyCode === 27 || e.keyCode === 112 || e.keyCode === 113 || e.keyCode === 114 || e.keyCode === 115 || e.keyCode === 116 || e.keyCode === 117 || e.keyCode === 118 || e.keyCode === 119 || e.keyCode === 120 || e.keyCode === 121 || e.keyCode === 122 || e.keyCode === 123 || e.keyCode === 145 || e.keyCode === 19 || e.keyCode === 45 || e.keyCode === 36 || e.keyCode === 33 || e.keyCode === 46 || e.keyCode === 35 || e.keyCode === 34 || e.keyCode === 38 || e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 91 || e.keyCode === 93 || e.keyCode === 37 || e.keyCode === 40 || e.keyCode === 39 || e.keyCode === 144 || e.keyCode === 111 || e.keyCode === 106 || e.keyCode === 109 || e.keyCode === 103 || e.keyCode === 104 || e.keyCode === 105 || e.keyCode === 100 || e.keyCode === 101 || e.keyCode === 102 || e.keyCode === 97 || e.keyCode === 98 || e.keyCode === 99 || e.keyCode === 96 || e.keyCode === 110 || e.keyCode === 107 || e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 91 || e.keyCode === 93){
 		return false;
 	}
 	else if (e.code){
 	let releasedKey = document.getElementById(e.code);
-	this.props.classChangeOff(releasedKey, capsStart);
+	this.props.classChangeOff(releasedKey, capsDown);
 		}
 	else{
 		let releasedKey;
@@ -397,7 +397,7 @@ class Row1 extends Component {
 
 			}
 		
-		this.props.classChangeOff(releasedKey, capsStart);
+		this.props.classChangeOff(releasedKey, capsDown);
 		
 	}	
 		
@@ -544,8 +544,8 @@ const mapDispatchToProps = (dispatch) => {
 	return {
 		typeAdd: (value) => {dispatch({type: 'TYPEADD', value: value})},
 		deleteChar: () => {dispatch({type: 'DELETE'})},
-		classChange: (id, mod) => {dispatch({type: 'PRESSED', id: id, mod: mod})},
-		classChangeOff: (id, mod) => {dispatch({type: 'RELEASED', id: id, mod: mod})}
+		classChange: (id, capsDown) => {dispatch({type: 'PRESSED', id: id, capsDown: capsDown})},
+		classChangeOff: (id, capsDown) => {dispatch({type: 'RELEASED', id: id, capsDown: capsDown})}
 		
 	}
 }
