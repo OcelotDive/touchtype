@@ -293,7 +293,7 @@ const keyboardOperations = {
             state.currentKey = action.id.attributes[2]
             let x = document.getElementById("CapsLock");
             x.className = 'doubleKeyandAbitOn';
-            state.capsOnOff = !state.capsOnOff;
+            state.capsOnOff = true;
         }
       
 
