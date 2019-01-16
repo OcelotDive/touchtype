@@ -139,7 +139,7 @@ const keyboardOperations = {
         //return key to unpressed class
 			state.currentKey = null;
 
-
+		
 
 			//null return incase unwanted key pressed keeps everything the same
 			if (action.id === null) {
@@ -189,7 +189,10 @@ const keyboardOperations = {
 				action.id.className = state.capsOnOff ? 'doubleKeyandAbitOn' : 'doubleKeyandAbit';
 				state.capsOnOff = state.capsOnOff;
 				state.currentKey = null;
-			} else if (action.id.id === 'IntlBackslash' && state.flagSelect1 === 'usLayout flagHighlighted') {
+			} 
+			
+		
+			else if (action.id.id === 'IntlBackslash' && state.flagSelect1 === 'usLayout flagHighlighted') {
 				action.id.className = 'usBackSlash';
 				state.currentKey = null;
 			} else if (action.id.id === 'Backslash' && state.flagSelect2 === 'ukLayout flagHighlighted') {
@@ -200,11 +203,13 @@ const keyboardOperations = {
 				state.currentKey = null;
 
 			}
+			state.firstKeyPress = false;
     },
     keyboardKeyPress: (state, action) => {
         //start timer
 			state.timeOn = true;
-
+			
+		
 
 
 			//return className to default after any key press (coloured keys)
@@ -232,7 +237,7 @@ const keyboardOperations = {
 			state.timeOn = true;
 
 
-			let alpha;
+			let alpha = false;
 			//check for alpha for use with capslock
 
 			if (action.id.id === 'KeyA' ||
@@ -264,6 +269,14 @@ const keyboardOperations = {
 				alpha = true;
 
 			}
+			//is caps already on
+			if(alpha && action.mod && state.firstKeyPress === true) {
+				state.currentKey = action.id.attributes[3]
+				let x = document.getElementById("CapsLock");
+				x.className = 'doubleKeyandAbitOn';
+				state.capsOnOff = !state.capsOnOff;
+			}
+			
 
 			//has caps been pressed
 			if (action.id.id === 'CapsLock') {
@@ -275,7 +288,10 @@ const keyboardOperations = {
 				state.shiftOnOff = true;
 				state.currentKey = null;
 
-			} else {
+			}
+			
+		
+			else {
 
 				state.currentKey = state.shiftOnOff || state.capsOnOff && alpha ? action.id.attributes[3].value : action.id.attributes[2].value;
 				//console.log('this is the current key ' + state.currentKey)
@@ -307,6 +323,7 @@ const keyboardOperations = {
 
 
 			}
+		
     }
 }
 

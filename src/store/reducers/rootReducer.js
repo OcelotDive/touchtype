@@ -28,7 +28,8 @@ const initState = {
     finishShow: false,
     flagSelect1: 'usLayout flagHighlighted',
     flagSelect2: 'ukLayout',
-    keyboardIsOn: true
+    keyboardIsOn: true,
+	firstKeyPress: true
 
 }
 
@@ -40,7 +41,7 @@ const rootReducer = (state = initState, action) => {
 
         //handles general key presses
         case 'PRESSED':
-
+		
             keyboardOperations.keyboardKeyPress(state, action);
 
             return {
@@ -150,8 +151,8 @@ const rootReducer = (state = initState, action) => {
                 finishShow: false,
                 flagSelect1: state.flagSelect1,
                 flagSelect2: state.flagSelect2,
-                keyboardIsOn: state.keyboardIsOn
-
+                keyboardIsOn: state.keyboardIsOn,
+				firstKeyPress: state.firstKeyPress
             }
 
         case 'KEYBOARDONOFF':
@@ -161,6 +162,8 @@ const rootReducer = (state = initState, action) => {
             return {
                 ...state
             }
+			
+		
 
         default:
             break;
