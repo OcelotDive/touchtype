@@ -70,7 +70,7 @@ const rootReducer = (state = initState, action) => {
 
 
         case 'LESSONSMENU':
-            //returning className to default after menu open
+          
             keyboardOperations.openCloseLessonmenu(state);
 
             return {
@@ -123,7 +123,7 @@ const rootReducer = (state = initState, action) => {
             }
 
         case 'FLAGCLICK':
-            //return all key classes to normal
+         
             keyboardOperations.changeKeyboard(state, action)
 
             return {
