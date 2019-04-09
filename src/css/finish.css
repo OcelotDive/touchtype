@@ -23,7 +23,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', end
 	width: 150px;
 	height: 150px;
 	margin-left:calc(50% - 75px);
-	background-image: url('../images/Green-Tick2.png');
+	background-image: url('../images/Green-Tick2.webp');
 	background-repeat: no-repeat;
 	background-size: contain;
 

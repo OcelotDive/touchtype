@@ -34,7 +34,7 @@
 }
 
 .lessonArea div:nth-child(1) {
-	background-image: url(../images/hands.jpg);
+	background-image: url(../images/hands.webp);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
@@ -44,14 +44,14 @@
 	
 }
 .lessonArea div:nth-child(2) {
-	background-image: url(../images/keys.jpg);
+	background-image: url(../images/keys.webp);
 	background-size: cover;
 	background-repeat: no-repeat;
 	-moz-background-attachment: fixed;
 	background-attachment: fixed;
 }
 .lessonArea div:nth-child(3) {
-	background-image: url(../images/laptop.jpg);
+	background-image: url(../images/laptop.webp);
 	background-size: cover;
 	-moz-background-attachment: fixed;
 	background-attachment: fixed;
@@ -59,7 +59,7 @@
 
 .lessonArea div:nth-child(4) {
 	background: aquamarine;
-	background-image: url(../images/typingFast.jpg);
+	background-image: url(../images/typingFast.webp);
 	background-size: cover;
 	-moz-background-attachment: fixed;
 	background-attachment: fixed;

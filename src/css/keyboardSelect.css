@@ -21,13 +21,13 @@
 .usLayout {
 	width: 48px;
 	height: 48px;
-	background-image: url(../images/US.png);
+	background-image: url(../images/US.webp);
 	cursor: pointer;
 }
 .ukLayout {
 	width: 48px;
 	height: 48px;
-	background-image: url(../images/UK.png);
+	background-image: url(../images/UK.webp);
     cursor: pointer;
 }
 .noLayout {
@@ -36,7 +36,7 @@
     font-size: 8px;
     text-align: center;
     font-weight: 900;
-	background-image: url(../images/nokeyboard.png);
+	background-image: url(../images/nokeyboard.webp);
 	cursor: pointer;
 	-webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
