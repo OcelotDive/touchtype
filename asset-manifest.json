@@ -1,12 +1,14 @@
 {
-  "main.css": "static/css/main.53b4cd8a.css",
-  "main.css.map": "static/css/main.53b4cd8a.css.map",
+  "main.css": "static/css/main.66489892.css",
+  "main.css.map": "static/css/main.66489892.css.map",
   "main.js": "static/js/main.872f10ec.js",
   "main.js.map": "static/js/main.872f10ec.js.map",
-  "static\\media\\Green-Tick2.png": "static/media/Green-Tick2.1e9ed879.png",
-  "static\\media\\hands.jpg": "static/media/hands.a5cc0df5.jpg",
-  "static\\media\\keys.jpg": "static/media/keys.06fffab3.jpg",
-  "static\\media\\laptop.jpg": "static/media/laptop.2334711e.jpg",
-  "static\\media\\nokeyboard.png": "static/media/nokeyboard.693dae1a.png",
-  "static\\media\\typingFast.jpg": "static/media/typingFast.5663e33c.jpg"
+  "static\\media\\Green-Tick2.webp": "static/media/Green-Tick2.20b9387e.webp",
+  "static\\media\\UK.webp": "static/media/UK.de6f42f1.webp",
+  "static\\media\\US.webp": "static/media/US.bcfa0a95.webp",
+  "static\\media\\hands.webp": "static/media/hands.dc29be83.webp",
+  "static\\media\\keys.webp": "static/media/keys.4617aef2.webp",
+  "static\\media\\laptop.webp": "static/media/laptop.84846512.webp",
+  "static\\media\\nokeyboard.webp": "static/media/nokeyboard.13b205d3.webp",
+  "static\\media\\typingFast.webp": "static/media/typingFast.cfbe0bd3.webp"
 }
