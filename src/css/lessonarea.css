@@ -7,7 +7,7 @@
 	top: 35%;
 	z-index: 9998;
 	overflow-y: scroll;
-	border: solid 5px black;
+	border: groove 5px grey;
 
 }
 
