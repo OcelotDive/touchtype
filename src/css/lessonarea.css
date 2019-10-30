@@ -2,12 +2,12 @@
 .lessonArea {
 	position: absolute;
 	width: 90%;
-	height: 65%;
+	height: 53%;
 	left: 5%;
-	top: 28%;
+	top: 35%;
 	z-index: 9998;
 	overflow-y: scroll;
-	
+	border: solid 5px black;
 
 }
 
@@ -27,9 +27,10 @@
 	font-weight: bold;
 	font-family:  'Exo 2', sans-serif;
 	width: 100%;
-	height: 100vh;
 	-ms-flex-wrap: wrap;
 	 flex-wrap: wrap;
+    
+   
 
 }
 
@@ -37,7 +38,6 @@
 	background-image: url(../images/hands.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
 	-moz-background-attachment: fixed;
 	background-attachment: fixed;
 	overflow: hidden;
@@ -63,6 +63,7 @@
 	background-size: cover;
 	-moz-background-attachment: fixed;
 	background-attachment: fixed;
+ 
 }
 
 
@@ -97,7 +98,7 @@ h4 {
 }
 
 /* media queries */
-@media screen and (max-width: 510px) { 
+/*@media screen and (max-width: 510px) { 
     
     .lessonArea { visibility: hidden; z-index: -9999;}
 }
@@ -105,3 +106,4 @@ h4 {
     
     .lessonArea { visibility: hidden; z-index: -9999;}
 }
+*/
