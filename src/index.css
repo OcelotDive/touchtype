@@ -62,6 +62,14 @@ body {
 	/* ie6-9 */
 }
 
+.keyboard:hover {
+	cursor: grab;	
+}
+
+.keyboard:active {
+	cursor: grabbing;	
+}
+
 .keyboardOff {
 	position: absolute;
 	left: calc(50% - 350px);
